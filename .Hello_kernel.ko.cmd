@@ -1,1 +1,0 @@
-cmd_/home/rangosta/kernel/kernel_module/Hello_kernel.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.13.0-24-generic/scripts/module-common.lds --build-id  -o /home/rangosta/kernel/kernel_module/Hello_kernel.ko /home/rangosta/kernel/kernel_module/Hello_kernel.o /home/rangosta/kernel/kernel_module/Hello_kernel.mod.o
